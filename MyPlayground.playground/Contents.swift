@@ -57,5 +57,109 @@ for _ in 1...5 {
     myFirstInt
     print(myFirstInt)
 }
+var i:Int = 0
+for i in 1...5  {
+    if i != 3 {
+        print(i)
+    }
+}
 
+//repeat while
+repeat{
+    i+=1
+} while i<10
+
+//index
+var playground = "hello world"
+let start = playground.startIndex
+let end = playground.index(start, offsetBy: 4)
+let fifthCharacter = playground[end]
+let rangenew = start...end
+let firstfive = playground[rangenew]
+
+//optional value
+var errorCodeString: String?
+print (errorCodeString ?? "No error")
+
+//optional binding
+if let theError = errorCodeString {
+    print( theError)
+}
+
+//implicitly unwrapped optional
+var someString:String!
+someString = "some value"
+
+//nil coalescing operator
+let description  = errorCodeString ?? "No error"
+
+//array
+var bucketList:[String] = ["Climb Mr. Bucket"]
+bucketList.append("something")
+bucketList.append("another one")
+bucketList.append("tester")
+bucketList.remove(at: 2)
+print(bucketList.count)
+bucketList[2] += " Jack"
+
+//dictionary
+var dict1: Dictionary< String, Double> = [:]
+var dict2 = Dictionary< String, Double>()
+
+//set
+//union, intersection,
+var groceryBag: Set = ["Apples", "Oranges", "Pineapple"]
+for food in groceryBag {
+    print( food)
+}
+let hasBananas = groceryBag.contains(" Bananas")
+let roommatesGroceryBag = Set([" Bananas", "Cereal", "Milk", "Oranges"])
+let commonGroceryBag = groceryBag.union(roommatesGroceryBag)
+let itemsToReturn = commonGroceryBag.intersection(roommatesGroceryBag)
+let disjoint = commonGroceryBag.isDisjoint(with: roommatesGroceryBag)
+
+//function
+func printPersonalGreeting(greeting defaultGreeting: String = "Hello", to names: String...) {
+    for name in names{
+        print("\(defaultGreeting) \(name), welcome to your playground.")
+    }
+}
+printPersonalGreeting(to: "Justin")
+
+//inout
+var errorNew = "The request failed:"
+func appendErrorCode(_ code: Int, toErrorString errorString: inout String) {
+    if code == 400 {
+        errorString += " bad request."
+    }
+}
+appendErrorCode(400, toErrorString: &errorNew)
+
+//clousure
+let volunteerCounts = [1, 3, 40, 32, 2, 53, 77, 13]
+let volunteersSorted = volunteerCounts.sorted { $0 < $1 }
+
+//map
+let precinctPopulations = [1244, 2021, 2157]
+let projectedPopulations = precinctPopulations.map {
+    (population: Int) -> Int in return population * 2
+}
+
+//filter
+let bigProjections = projectedPopulations.filter {
+    (projection: Int) -> Bool in
+    return projection > 4000 }
+
+//reduce
+let totalProjection = projectedPopulations.reduce( 0) {
+    (accumulatedProjection: Int, precinctProjection: Int) -> Int in
+    return accumulatedProjection + precinctProjection
+}
+
+//enum
+enum TextAlignment {
+    case left
+    case right
+    case center
+}
 
