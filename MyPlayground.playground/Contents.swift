@@ -157,9 +157,63 @@ let totalProjection = projectedPopulations.reduce( 0) {
 }
 
 //enum
-enum TextAlignment {
-    case left
-    case right
-    case center
+enum TextAlignment: Int {
+    case left = 20
+    case right = 30
+    case center = 40
 }
 
+let myRawValue = 20
+if let myAlignment = TextAlignment(rawValue: myRawValue){
+    print("successfully converted \(myRawValue) into a TextAlignment")
+} else {
+    print("\( myRawValue) has no corresponding TextAlignment case")
+}
+
+//self case
+enum Lightbulb{
+    case on
+    case off
+    
+    func surfaceTemperature(forAmbientTemperature ambient: Double) -> Double {
+        switch self {
+        case .on:
+            return ambient + 150.0
+        case .off:
+            return ambient
+        }
+    }
+}
+
+var bulb = Lightbulb.on
+let ambientTemperature = 77.0
+var bulbTemperature = bulb.surfaceTemperature(forAmbientTemperature: ambientTemperature)
+print(" the bulb' s temperature is \(bulbTemperature)")
+
+//diff function
+enum ShapeDimensions {
+    case point
+    case square( side: Double)
+    case rectangle( width: Double, height: Double)
+    
+    func area() -> Double {
+        switch self {
+        case .point:
+            return 0
+        case let .square(side: side):
+            return side * side
+        case let .rectangle( width: w, height: h):
+            return w * h
+        }
+    }
+}
+
+var recShape = ShapeDimensions.rectangle(width: 10, height: 20)
+print (recShape.area())
+
+// recursive
+enum FamilyTree {
+    case noKnownParents
+    indirect case oneKnownParent( name: String, ancestors: FamilyTree)
+    indirect case twoKnownParents( fatherName: String, fatherAncestors: FamilyTree, motherName: String, motherAncestors: FamilyTree)
+}
