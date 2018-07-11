@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F13BA4920F47807008EFDDC /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F13BA4820F47807008EFDDC /* Monster.swift */; };
+		7F13BA4B20F48020008EFDDC /* Zombie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F13BA4A20F48020008EFDDC /* Zombie.swift */; };
 		7FA8D5E520F455C300003063 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA8D5E420F455C300003063 /* main.swift */; };
 		7FA8D5EC20F45A0B00003063 /* Town.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA8D5EB20F45A0B00003063 /* Town.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7F13BA4820F47807008EFDDC /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		7F13BA4A20F48020008EFDDC /* Zombie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zombie.swift; sourceTree = "<group>"; };
 		7FA8D5E120F455C300003063 /* MonstorTown */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MonstorTown; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FA8D5E420F455C300003063 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		7FA8D5EB20F45A0B00003063 /* Town.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Town.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				7FA8D5EB20F45A0B00003063 /* Town.swift */,
+				7F13BA4820F47807008EFDDC /* Monster.swift */,
+				7F13BA4A20F48020008EFDDC /* Zombie.swift */,
 				7FA8D5E420F455C300003063 /* main.swift */,
 			);
 			path = MonstorTown;
@@ -124,6 +130,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FA8D5E520F455C300003063 /* main.swift in Sources */,
+				7F13BA4B20F48020008EFDDC /* Zombie.swift in Sources */,
+				7F13BA4920F47807008EFDDC /* Monster.swift in Sources */,
 				7FA8D5EC20F45A0B00003063 /* Town.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
