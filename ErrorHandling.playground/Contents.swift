@@ -69,11 +69,18 @@ class Lexer {
 }
 
 class Parser {
+    enum Error: Swift.Error {
+        case unexpectedEndOfInput
+        case invalidToken( Token)
+    }
+    
     let tokens: [Token]
     var position = 0
+    
     init( tokens: [Token]) {
         self.tokens = tokens
     }
+    
     func getNextToken() -> Token? {
         guard position < tokens.count
             else {
@@ -82,6 +89,31 @@ class Parser {
         let token = tokens[ position]
         position += 1
         return token
+    }
+    
+    func getNumber() throws -> Int {
+        guard let token = getNextToken()
+            else {
+                throw Parser.Error.unexpectedEndOfInput }
+        switch token {
+        case .number( let value):
+            return value
+        case .plus:
+            throw Parser.Error.invalidToken( token)
+        }
+    }
+ 
+    func parse() throws -> Int {
+        var value = try getNumber()
+        while let token = getNextToken() {
+            switch token {
+            case .plus:
+                let nextNumber = try getNumber()
+                value += nextNumber
+            case .number:
+                throw Parser.Error.invalidToken( token) }
+        }
+        return value
     }
 }
 
@@ -92,8 +124,16 @@ func evaluate(_ input: String) {
     do {
         let tokens = try lexer.lex()
         print(" Lexer output: \(tokens)")
-    }
-    catch {
+        let parser = Parser( tokens: tokens)
+        let result = try parser.parse()
+        print(" Parser output: \(result)")
+    } catch Lexer.Error.invalidCharacter( let character) {
+        print("Input contained an invalid character: \(character)")
+    } catch Parser.Error.unexpectedEndOfInput {
+        print(" Unexpected end of input during parsing")
+    } catch Parser.Error.invalidToken( let token) {
+        print(" Invalid token during parsing: \(token)")
+    } catch {
         print(" An error occurred: \(error)")
     }
 }
