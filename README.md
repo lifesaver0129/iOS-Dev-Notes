@@ -1,6 +1,6 @@
 # iOS Dev Notes
 
-Path of iOS develop during Microsoft Intern in July to Sept, 2018.
+Partial works of iOS developing as Microsoft intern during July to Sept, 2018.
 
 
 
