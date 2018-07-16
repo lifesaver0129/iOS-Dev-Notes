@@ -36,5 +36,19 @@ Partial works of iOS developing as Microsoft intern during July to Sept, 2018.
 
 ## Siri Shortcuts
 * iOS 12 new feature
+
 * Work with Xcode 10 & developer account
+
 * See [Siri_shortcuts.md](https://github.com/lifesaver0129/iOS-Dev-Notes/blob/master/Siri_shortcuts.md)
+
+* Theme presentation
+
+  * [Introduction to Siri Shortcuts](https://developer.apple.com/videos/play/wwdc2018/211)
+  * [Siri Shortcuts on the Siri Watch Face](https://developer.apple.com/videos/play/wwdc2018/217)
+  * [What's New in Cocoa Touch](https://developer.apple.com/videos/play/wwdc2018/202)
+
+   
+
+## TODO
+
+* [Localization (multi-language)](https://developer.apple.com/videos/play/wwdc2018/404/)
