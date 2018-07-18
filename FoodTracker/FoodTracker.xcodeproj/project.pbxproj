@@ -13,6 +13,7 @@
 		7FFD27D620FDD242009DD5D2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FFD27D420FDD242009DD5D2 /* MainInterface.storyboard */; };
 		7FFD27DA20FDD242009DD5D2 /* FoodTrackerIntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7FFD27CD20FDD242009DD5D2 /* FoodTrackerIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7FFD27DD20FDD242009DD5D2 /* FoodTrackerIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7FFD27C420FDD242009DD5D2 /* FoodTrackerIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7FFD27E620FEF427009DD5D2 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FFD27E520FEF427009DD5D2 /* Intents.framework */; };
 		936B4B821DB54E8F0090E3EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B4B811DB54E8F0090E3EE /* AppDelegate.swift */; };
 		936B4B841DB54E8F0090E3EE /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B4B831DB54E8F0090E3EE /* MealViewController.swift */; };
 		936B4B871DB54E8F0090E3EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 936B4B851DB54E8F0090E3EE /* Main.storyboard */; };
@@ -74,6 +75,7 @@
 		7FFD27D220FDD242009DD5D2 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
 		7FFD27D520FDD242009DD5D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		7FFD27D720FDD242009DD5D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FFD27E520FEF427009DD5D2 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		936B4B7E1DB54E8F0090E3EE /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		936B4B811DB54E8F0090E3EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		936B4B831DB54E8F0090E3EE /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FFD27E620FEF427009DD5D2 /* Intents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +138,7 @@
 		7FFD27CE20FDD242009DD5D2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7FFD27E520FEF427009DD5D2 /* Intents.framework */,
 				7FFD27CF20FDD242009DD5D2 /* IntentsUI.framework */,
 			);
 			name = Frameworks;

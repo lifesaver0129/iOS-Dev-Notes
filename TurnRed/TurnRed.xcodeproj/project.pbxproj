@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7FFD27F420FF0442009DD5D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFD27F320FF0442009DD5D2 /* AppDelegate.swift */; };
+		7FFD27F620FF0443009DD5D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFD27F520FF0443009DD5D2 /* ViewController.swift */; };
+		7FFD27F920FF0443009DD5D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FFD27F720FF0443009DD5D2 /* Main.storyboard */; };
+		7FFD27FB20FF0443009DD5D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FFD27FA20FF0443009DD5D2 /* Assets.xcassets */; };
+		7FFD27FE20FF0443009DD5D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FFD27FC20FF0443009DD5D2 /* LaunchScreen.storyboard */; };
+		7FFD280920FF0444009DD5D2 /* TurnRedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFD280820FF0444009DD5D2 /* TurnRedTests.swift */; };
+		7FFD281620FF131E009DD5D2 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FFD281520FF131E009DD5D2 /* Intents.framework */; };
+		7FFD281820FF135A009DD5D2 /* makeRedButtonAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFD281720FF135A009DD5D2 /* makeRedButtonAction.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7FFD280520FF0444009DD5D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7FFD27E820FF0442009DD5D2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FFD27EF20FF0442009DD5D2;
+			remoteInfo = TurnRed;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7FFD27F020FF0442009DD5D2 /* TurnRed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TurnRed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FFD27F320FF0442009DD5D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7FFD27F520FF0443009DD5D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7FFD27F820FF0443009DD5D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7FFD27FA20FF0443009DD5D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7FFD27FD20FF0443009DD5D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7FFD27FF20FF0443009DD5D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FFD280420FF0444009DD5D2 /* TurnRedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TurnRedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FFD280820FF0444009DD5D2 /* TurnRedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnRedTests.swift; sourceTree = "<group>"; };
+		7FFD280A20FF0444009DD5D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FFD281320FF0461009DD5D2 /* TurnRed.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TurnRed.entitlements; sourceTree = "<group>"; };
+		7FFD281520FF131E009DD5D2 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
+		7FFD281720FF135A009DD5D2 /* makeRedButtonAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeRedButtonAction.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7FFD27ED20FF0442009DD5D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FFD281620FF131E009DD5D2 /* Intents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FFD280120FF0444009DD5D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7FFD27E720FF0442009DD5D2 = {
+			isa = PBXGroup;
+			children = (
+				7FFD27F220FF0442009DD5D2 /* TurnRed */,
+				7FFD280720FF0444009DD5D2 /* TurnRedTests */,
+				7FFD27F120FF0442009DD5D2 /* Products */,
+				7FFD281420FF131E009DD5D2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7FFD27F120FF0442009DD5D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FFD27F020FF0442009DD5D2 /* TurnRed.app */,
+				7FFD280420FF0444009DD5D2 /* TurnRedTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FFD27F220FF0442009DD5D2 /* TurnRed */ = {
+			isa = PBXGroup;
+			children = (
+				7FFD281320FF0461009DD5D2 /* TurnRed.entitlements */,
+				7FFD27F320FF0442009DD5D2 /* AppDelegate.swift */,
+				7FFD27F520FF0443009DD5D2 /* ViewController.swift */,
+				7FFD27F720FF0443009DD5D2 /* Main.storyboard */,
+				7FFD27FA20FF0443009DD5D2 /* Assets.xcassets */,
+				7FFD27FC20FF0443009DD5D2 /* LaunchScreen.storyboard */,
+				7FFD27FF20FF0443009DD5D2 /* Info.plist */,
+				7FFD281720FF135A009DD5D2 /* makeRedButtonAction.swift */,
+			);
+			path = TurnRed;
+			sourceTree = "<group>";
+		};
+		7FFD280720FF0444009DD5D2 /* TurnRedTests */ = {
+			isa = PBXGroup;
+			children = (
+				7FFD280820FF0444009DD5D2 /* TurnRedTests.swift */,
+				7FFD280A20FF0444009DD5D2 /* Info.plist */,
+			);
+			path = TurnRedTests;
+			sourceTree = "<group>";
+		};
+		7FFD281420FF131E009DD5D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FFD281520FF131E009DD5D2 /* Intents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7FFD27EF20FF0442009DD5D2 /* TurnRed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FFD280D20FF0444009DD5D2 /* Build configuration list for PBXNativeTarget "TurnRed" */;
+			buildPhases = (
+				7FFD27EC20FF0442009DD5D2 /* Sources */,
+				7FFD27ED20FF0442009DD5D2 /* Frameworks */,
+				7FFD27EE20FF0442009DD5D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TurnRed;
+			productName = TurnRed;
+			productReference = 7FFD27F020FF0442009DD5D2 /* TurnRed.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7FFD280320FF0444009DD5D2 /* TurnRedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FFD281020FF0444009DD5D2 /* Build configuration list for PBXNativeTarget "TurnRedTests" */;
+			buildPhases = (
+				7FFD280020FF0444009DD5D2 /* Sources */,
+				7FFD280120FF0444009DD5D2 /* Frameworks */,
+				7FFD280220FF0444009DD5D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7FFD280620FF0444009DD5D2 /* PBXTargetDependency */,
+			);
+			name = TurnRedTests;
+			productName = TurnRedTests;
+			productReference = 7FFD280420FF0444009DD5D2 /* TurnRedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7FFD27E820FF0442009DD5D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Yuxing Hu";
+				TargetAttributes = {
+					7FFD27EF20FF0442009DD5D2 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					7FFD280320FF0444009DD5D2 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 7FFD27EF20FF0442009DD5D2;
+					};
+				};
+			};
+			buildConfigurationList = 7FFD27EB20FF0442009DD5D2 /* Build configuration list for PBXProject "TurnRed" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7FFD27E720FF0442009DD5D2;
+			productRefGroup = 7FFD27F120FF0442009DD5D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7FFD27EF20FF0442009DD5D2 /* TurnRed */,
+				7FFD280320FF0444009DD5D2 /* TurnRedTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7FFD27EE20FF0442009DD5D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FFD27FE20FF0443009DD5D2 /* LaunchScreen.storyboard in Resources */,
+				7FFD27FB20FF0443009DD5D2 /* Assets.xcassets in Resources */,
+				7FFD27F920FF0443009DD5D2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FFD280220FF0444009DD5D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7FFD27EC20FF0442009DD5D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FFD27F620FF0443009DD5D2 /* ViewController.swift in Sources */,
+				7FFD281820FF135A009DD5D2 /* makeRedButtonAction.swift in Sources */,
+				7FFD27F420FF0442009DD5D2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FFD280020FF0444009DD5D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FFD280920FF0444009DD5D2 /* TurnRedTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7FFD280620FF0444009DD5D2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7FFD27EF20FF0442009DD5D2 /* TurnRed */;
+			targetProxy = 7FFD280520FF0444009DD5D2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7FFD27F720FF0443009DD5D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FFD27F820FF0443009DD5D2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7FFD27FC20FF0443009DD5D2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7FFD27FD20FF0443009DD5D2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7FFD280B20FF0444009DD5D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7FFD280C20FF0444009DD5D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7FFD280E20FF0444009DD5D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TurnRed/TurnRed.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UBF8T346G9;
+				INFOPLIST_FILE = TurnRed/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.microsoft.axp-ios.AXPlatformTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7FFD280F20FF0444009DD5D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TurnRed/TurnRed.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UBF8T346G9;
+				INFOPLIST_FILE = TurnRed/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.microsoft.axp-ios.AXPlatformTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7FFD281120FF0444009DD5D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25ZA8N72T6;
+				INFOPLIST_FILE = TurnRedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Microsoft.TurnRedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TurnRed.app/TurnRed";
+			};
+			name = Debug;
+		};
+		7FFD281220FF0444009DD5D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25ZA8N72T6;
+				INFOPLIST_FILE = TurnRedTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Microsoft.TurnRedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TurnRed.app/TurnRed";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7FFD27EB20FF0442009DD5D2 /* Build configuration list for PBXProject "TurnRed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FFD280B20FF0444009DD5D2 /* Debug */,
+				7FFD280C20FF0444009DD5D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FFD280D20FF0444009DD5D2 /* Build configuration list for PBXNativeTarget "TurnRed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FFD280E20FF0444009DD5D2 /* Debug */,
+				7FFD280F20FF0444009DD5D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FFD281020FF0444009DD5D2 /* Build configuration list for PBXNativeTarget "TurnRedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FFD281120FF0444009DD5D2 /* Debug */,
+				7FFD281220FF0444009DD5D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7FFD27E820FF0442009DD5D2 /* Project object */;
+}
