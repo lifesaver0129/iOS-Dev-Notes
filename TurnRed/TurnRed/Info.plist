@@ -44,6 +44,7 @@
 	<key>NSUserActivityTypes</key>
 	<array>
 		<string>com.microsoft.axp-ios.AXPlatformTest.makered</string>
+		<string>com.microsoft.axp-ios.AXPlatformTest.makeback</string>
 	</array>
 </dict>
 </plist>

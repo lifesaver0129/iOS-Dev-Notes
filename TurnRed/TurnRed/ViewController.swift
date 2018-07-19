@@ -28,15 +28,23 @@ class ViewController: UIViewController {
         let activity = NSUserActivity(activityType: "com.microsoft.axp-ios.AXPlatformTest.makered")
         activity.title = "Make View Red"
         activity.userInfo = ["color" : "red"]
-         
-        activity.persistentIdentifier = NSUserActivityPersistentIdentifier(rawValue: "com.microsoft.axp-ios.AXPlatformTest.makered")
+        activity.isEligibleForSearch = true
+        activity.isEligibleForPrediction = true
+               activity.persistentIdentifier = NSUserActivityPersistentIdentifier(rawValue: "com.thelightprj.SiriShortcutsTutorial.makered")
         view.userActivity = activity
         activity.becomeCurrent()
-        
         makeViewRed()
     }
     
     @IBAction func buttonReturn(sender: UIButton) {
+        let activity = NSUserActivity(activityType: "com.microsoft.axp-ios.AXPlatformTest.makeback")
+        activity.title = "Back to White"
+        activity.userInfo = ["color" : "white"]
+        activity.isEligibleForSearch = true
+        activity.isEligibleForPrediction = true
+        activity.persistentIdentifier = NSUserActivityPersistentIdentifier(rawValue: "com.thelightprj.SiriShortcutsTutorial.makeback")
+        view.userActivity = activity
+        activity.becomeCurrent()
         makeViewWhite()
     }
     
