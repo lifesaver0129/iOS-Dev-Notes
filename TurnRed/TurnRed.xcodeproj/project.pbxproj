@@ -12,7 +12,6 @@
 		7FFD27F920FF0443009DD5D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FFD27F720FF0443009DD5D2 /* Main.storyboard */; };
 		7FFD27FB20FF0443009DD5D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FFD27FA20FF0443009DD5D2 /* Assets.xcassets */; };
 		7FFD27FE20FF0443009DD5D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FFD27FC20FF0443009DD5D2 /* LaunchScreen.storyboard */; };
-		7FFD280920FF0444009DD5D2 /* TurnRedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFD280820FF0444009DD5D2 /* TurnRedTests.swift */; };
 		7FFD281620FF131E009DD5D2 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FFD281520FF131E009DD5D2 /* Intents.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,8 +34,6 @@
 		7FFD27FD20FF0443009DD5D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FFD27FF20FF0443009DD5D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FFD280420FF0444009DD5D2 /* TurnRedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TurnRedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FFD280820FF0444009DD5D2 /* TurnRedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnRedTests.swift; sourceTree = "<group>"; };
-		7FFD280A20FF0444009DD5D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FFD281320FF0461009DD5D2 /* TurnRed.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TurnRed.entitlements; sourceTree = "<group>"; };
 		7FFD281520FF131E009DD5D2 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -64,7 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				7FFD27F220FF0442009DD5D2 /* TurnRed */,
-				7FFD280720FF0444009DD5D2 /* TurnRedTests */,
 				7FFD27F120FF0442009DD5D2 /* Products */,
 				7FFD281420FF131E009DD5D2 /* Frameworks */,
 			);
@@ -82,24 +78,15 @@
 		7FFD27F220FF0442009DD5D2 /* TurnRed */ = {
 			isa = PBXGroup;
 			children = (
-				7FFD281320FF0461009DD5D2 /* TurnRed.entitlements */,
 				7FFD27F320FF0442009DD5D2 /* AppDelegate.swift */,
 				7FFD27F520FF0443009DD5D2 /* ViewController.swift */,
-				7FFD27FA20FF0443009DD5D2 /* Assets.xcassets */,
 				7FFD27F720FF0443009DD5D2 /* Main.storyboard */,
 				7FFD27FC20FF0443009DD5D2 /* LaunchScreen.storyboard */,
+				7FFD281320FF0461009DD5D2 /* TurnRed.entitlements */,
+				7FFD27FA20FF0443009DD5D2 /* Assets.xcassets */,
 				7FFD27FF20FF0443009DD5D2 /* Info.plist */,
 			);
 			path = TurnRed;
-			sourceTree = "<group>";
-		};
-		7FFD280720FF0444009DD5D2 /* TurnRedTests */ = {
-			isa = PBXGroup;
-			children = (
-				7FFD280820FF0444009DD5D2 /* TurnRedTests.swift */,
-				7FFD280A20FF0444009DD5D2 /* Info.plist */,
-			);
-			path = TurnRedTests;
 			sourceTree = "<group>";
 		};
 		7FFD281420FF131E009DD5D2 /* Frameworks */ = {
@@ -225,7 +212,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FFD280920FF0444009DD5D2 /* TurnRedTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,12 +20,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     
-    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+    func application(_ application: UIApplication,
+                     continue userActivity: NSUserActivity,
+                     restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
         
-        let viewController = window?.rootViewController as! ViewController
-        viewController.makeViewRed()
+        if userActivity.activityType == "com.microsoft.axp-ios.AXPlatformTest.makered" {
+            let viewController = window?.rootViewController as! ViewController
+            viewController.makeViewRed()
+            return true
+        } else if userActivity.activityType == "com.microsoft.axp-ios.AXPlatformTest.makeback" {
+            let viewController = window?.rootViewController as! ViewController
+            viewController.makeViewWhite()
+            return true
+        }
         
-        return true
+        return false
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
