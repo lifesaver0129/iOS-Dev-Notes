@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         activity.userInfo = ["color" : "red"]
         activity.isEligibleForSearch = true
         activity.isEligibleForPrediction = true
-               activity.persistentIdentifier = NSUserActivityPersistentIdentifier(rawValue: "com.microsoft.axp-ios.AXPlatformTest.makered")
+        activity.persistentIdentifier = NSUserActivityPersistentIdentifier(rawValue: "com.microsoft.axp-ios.AXPlatformTest.makered")
         view.userActivity = activity
         activity.becomeCurrent()
         makeViewRed()
