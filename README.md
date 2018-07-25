@@ -49,10 +49,16 @@ Partial works of iOS developing as Microsoft intern during July to Sept, 2018.
   * Use both NSUA and Intent to deploy
 * **Edge** 
   * A Microsoft Corp. product
+
   * Currently not sopport for iOS12, needs to fix
+
   * [More info](https://www.microsoft.com/en-us/windows/microsoft-edge-mobile)
+
   * [Download link](https://itunes.apple.com/us/app/microsoft-edge/id1288723196?mt=8)
+
     ![edge](/Images/edge.png)
+
+  * Add Siri shortcuts feature in it
 
 ## Siri Shortcuts
 * iOS 12 new feature
@@ -62,6 +68,8 @@ Partial works of iOS developing as Microsoft intern during July to Sept, 2018.
   * [Introduction to Siri Shortcuts](https://developer.apple.com/videos/play/wwdc2018/211)
   * [Siri Shortcuts on the Siri Watch Face](https://developer.apple.com/videos/play/wwdc2018/217)
   * [What's New in Cocoa Touch](https://developer.apple.com/videos/play/wwdc2018/202)
+* What I've done
+  * Favorite hub, reading list and history shortcut
 
 ## TODO
 * [Localization (multi-language)](https://developer.apple.com/videos/play/wwdc2018/404/)
