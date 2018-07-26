@@ -23,7 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      continue userActivity: NSUserActivity,
                      restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
-        
         if userActivity.activityType == "com.microsoft.axp-ios.AXPlatformTest.makered" {
             let viewController = window?.rootViewController as! ViewController
             viewController.makeViewRed()
@@ -33,7 +32,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             viewController.makeViewWhite()
             return true
         }
-        
         return false
     }
 
