@@ -10,7 +10,7 @@ import Foundation
 extension UserDefaults {
 
     /// - Tag: app_group
-    private static let AppGroup = "group.com.example.apple-samplecode.SoupChef.Shared"
+    private static let AppGroup = "group.Microsoft.TeamsBC"
     
     enum StorageKeys: String {
         case soupMenu
