@@ -1,0 +1,1 @@
+((application.keyWindow?.rootViewController as? BrowserViewController)!.currentSessionViewController!.topViewController as? NewTabPageViewController)!.webkitWebView.evaluateJavaScript("$('.rc-item-js.rc-item.show .rc.rcdw a').attr('href')", completionHandler: { str, err in })

@@ -20,7 +20,7 @@ public class VoiceShortcutDataManager {
     public func voiceShortcut(for order: Order) -> INVoiceShortcut? {
         let voiceShorcut = voiceShortcuts.first { (voiceShortcut) -> Bool in
             guard let intent = voiceShortcut.__shortcut.intent as? OrderSoupIntent,
-                let orderFromIntent = Order(from: intent)else {
+                let orderFromIntent = Order(from: intent) else {
                 return false
             }
             return order == orderFromIntent

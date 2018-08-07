@@ -181,7 +181,6 @@ extension OrderDetailViewController {
         } else if tableConfiguration.sections[indexPath.section].type == .voiceShortcut {
             if let shortcut = voiceShortcutDataManager?.voiceShortcut(for: order) {
                 let editVoiceShortcutViewController = INUIEditVoiceShortcutViewController(voiceShortcut: shortcut)
-                
                 editVoiceShortcutViewController.delegate = self
                 present(editVoiceShortcutViewController, animated: true, completion: nil)
             } else {
