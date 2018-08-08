@@ -57,14 +57,24 @@ Partial works of iOS developing as Microsoft intern during July to Sept, 2018.
 
 ## Siri Shortcuts
 * iOS 12 new feature
-* Work with Xcode 10 & developer account
-* See [Siri_shortcuts.md](https://github.com/lifesaver0129/iOS-Dev-Notes/blob/master/Siri_shortcuts.md)
+* Work with macOS Mojave, Xcode 10 & apple developer account
 * Theme presentation
   * [Introduction to Siri Shortcuts](https://developer.apple.com/videos/play/wwdc2018/211)
   * [Siri Shortcuts on the Siri Watch Face](https://developer.apple.com/videos/play/wwdc2018/217)
   * [What's New in Cocoa Touch](https://developer.apple.com/videos/play/wwdc2018/202)
-* What I've done
-  * Favorite hub, reading list and history shortcut
+* What I've done (with Edge app)
+  * Migrate software version to iOS 12
+  * Finish the [investigation](https://github.com/lifesaver0129/iOS-Dev-Notes/blob/master/Siri_shortcuts.md) of Siri Shortcut
+  * Several shortcuts including
+    * New Tab
+    * New Private Tab
+    * Favorites Hub
+    * Voice search
+    * Camera search
+    * Clipboard search
+    * Today's Headline (directly goes to top news)
+  * Shortcuts setting page (within the app)
 
 ## TODO
 * [Localization (multi-language)](https://developer.apple.com/videos/play/wwdc2018/404/)
+* Code purify
