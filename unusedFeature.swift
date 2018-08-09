@@ -40,3 +40,5 @@ if let content = pasteboard.string {
 } else {
     self.deeplinkRouter.handle(URL(string: "https://www.bing.com"), withCompletion: nil)
 }
+
+PODFILE CHECKSUM: 0829a31310dd34f42a2084120228f298c19d6413

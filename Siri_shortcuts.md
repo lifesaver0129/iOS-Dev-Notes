@@ -31,7 +31,7 @@
 * Donate Shortcut
   * Let Siri learn when and where to expose shortcut
 * Handle shortcut
-  * When user want to use shortcuti in Siri, lockscreen, search
+  * When user want to use shortcuts in Siri, lock screen, search
   * Be ready to be invaded and handle
 
 
@@ -144,9 +144,9 @@
 
 
 
-## Custom responces
+## Custom responses
 
-* Custom responces
+* Custom responses
   * Confirmation
   * Success
   * Information
