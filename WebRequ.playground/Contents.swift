@@ -1,15 +1,22 @@
 import UIKit
 import WebKit
+import JavaScriptCore
 
-let webConfiguration = WKWebViewConfiguration()
-let webView = WKWebView(frame: .zero, configuration: webConfiguration)
-let myURL = URL(string: "https://www.msn.com/spartan/mmx")
-let myRequest = URLRequest(url: myURL!)
-webView.load(myRequest)
-webView.evaluateJavaScript("$('.rc-item-js.rc-item.show .rc.rcdw a').attr('href')", completionHandler: { result, err in
-    if err == nil,
-        let urlString = result as? String,
-        let url = URL(string: urlString) {
-        print(url)
-    }
-})
+let myURLString = "https://www.msn.com/spartan/mmx"
+let myURL = URL(string: myURLString)
+
+//do {
+//    let myHTMLString = try String(contentsOf: myURL!, encoding: .ascii)
+//    print("HTML : \(myHTMLString)")
+//} catch let error {
+//    print("Error: \(error)")
+//}
+
+
+let jsSource = "$('#SIvCob').textContent"
+
+var context = JSContext()
+context?.evaluateScript(jsSource)
+
+let testFunction = context?.objectForKeyedSubscript(try! String(contentsOf: myURL!, encoding: .ascii))
+let result = testFunction?.call(withArguments: ["the message"])
