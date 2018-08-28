@@ -125,7 +125,6 @@
   //Delete the donation
   ```
 
-  
 
 ## Media shortcuts  
 
@@ -219,3 +218,4 @@ import Intents
 // Adding a shortcut from an INIntent
 ```
 
+ 
