@@ -10,7 +10,8 @@ import Foundation
 extension UserDefaults {
 
     /// - Tag: app_group
-    private static let AppGroup = "group.Microsoft.TeamsBC"
+    // Note: This project does not share data between iOS and watchOS. Orders placed on the watch will not display in the iOS order history.
+    private static let AppGroup = "group.com.example.apple-samplecode.SoupChef.Shared"
     
     enum StorageKeys: String {
         case soupMenu
